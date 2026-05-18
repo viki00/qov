@@ -6,6 +6,7 @@ services:
       - ES_HOST=https://10.0.0.237:9200
       - ES_USER=elastic
       - ES_PASSWORD=changeme
+      - DB_URL=postgresql://user:pass@timescaledb-svc:5432/finance
     restart: always
 
   frontend:

@@ -3,3 +3,4 @@ uvicorn[standard]
 elasticsearch[async]>=8.0.0,<9.0.0
 yfinance
 numpy
+asyncpg
