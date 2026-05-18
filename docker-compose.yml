@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./backend
+    network_mode: host
+    environment:
+      - ES_HOST=https://10.0.0.237:9200
+      - ES_USER=elastic
+      - ES_PASSWORD=changeme
+    restart: always
+
+  frontend:
+    build: ./frontend
+    network_mode: host
+    depends_on:
+      - backend
+    restart: always

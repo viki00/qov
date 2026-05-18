@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+.gitignore
+README.md
+Dockerfile
+tailwind.config.js
+postcss.config.js
+package-lock.json
